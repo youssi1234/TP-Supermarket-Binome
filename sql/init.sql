@@ -3,9 +3,9 @@
 CREATE DATABASE IF NOT EXISTS supermarche;
 USE supermarche;
 
--- =============================================
+
 -- 2. Table PRODUIT
--- =============================================
+
 CREATE TABLE IF NOT EXISTS produit (
     id INT AUTO_INCREMENT PRIMARY KEY,
     designation VARCHAR(100) NOT NULL,
