@@ -1,0 +1,35 @@
+    Todo list(4114-4387)
+
+1.  technique Utiliser et Mise en place avant projet (binome)
+    -Git (commits réguliers)
+    -Organisation des dossiers (respecter structure)
+    -Ergonomie
+
+2.  Analyse Templates (HTML/CSS flexbox/grid) (binome)
+    -Template de base (Les 2 images fournies par Mr Rojo)
+
+3.Base de données (MySQL)
+    -Créer DB supermarche
+    -Table produit (id, nom, prix, stock)
+    -Table caisse (id, numero)
+    -Table achat (id, caisse_id, produit_id, quantite, date, total)
+    -Insérer 5 produits
+    -Insérer 2 caisses
+
+4. PHP + Flight
+    -Initialiser FlightPHP
+    -Configurer connexion MySQL
+    -Créer routes
+
+
+5. Écrans
+    -Écran login (avant choix caisse)
+    -Écran choix caisse
+    -Écran saisie achat (tableau produit, prix, qté, montant)
+    -Écran clôturer achat → vide la liste
+    -Écran stats (total ventes, par article, par jour)
+
+6.  technique Utiliser et Mise en place avant projet
+    -Git (commits réguliers)
+    -Organisation des dossiers (respecter structure)
+    -Ergonomie
