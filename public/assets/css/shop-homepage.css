@@ -1,6 +1,32 @@
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: aqua;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "JetBrains Mono", monospace;
+  background-color: #f5f0e8;
+  color: #1a1714;
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+header {
+  background-color: #303f50;
+  color: #fdfaf5;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+  color: white;
+}/*# sourceMappingURL=shop-homepage.css.map */
