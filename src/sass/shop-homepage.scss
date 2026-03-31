@@ -11,6 +11,15 @@ $ink-muted: #7a6e62;
 $white: #fdfaf5;
 $rule: rgba(184, 156, 110, 0.22);
 $header: #303f50;
+$background: #f0f2f8;
+
+$radius: 10px;
+
+@mixin shadow {
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.06);
+}
 
 @mixin pattern-beige {
   background-color: $cream;
@@ -36,24 +45,67 @@ html {
 
 body {
   font-family: "JetBrains Mono", monospace;
-  background-color: $cream;
+  background-color: $background;
   color: $ink;
   overflow-x: hidden;
   line-height: 1.7;
 }
 
 header {
-    background-color: $header;
-    color: $white;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    a {
-        text-decoration: none;
-        color : white;
-    }
+  background-color: $header;
+  color: $white;
+  @include shadow;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 main {
-    
+  padding: 2rem;
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .menu {
+    @include shadow;
+    padding: 2rem;
+    width: 30%;
+    border-radius: $radius;
+    background-color: $white;
+    list-style: none;
+    gap: 1.5rem;
+    a {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      &:hover {
+        color: $gold-lt;
+      }
+      li {
+        list-style: none;
+      }
+    }
+  }
+
+  .main {
+    @include shadow;
+    padding: 2rem;
+    width: 70%;
+    border-radius: $radius;
+    background-color: $white;
+    height: auto;
+  }
+}
+footer {
+  background-color: $header;
+  color: $white;
+  text-align: center;
+  padding: 1rem;
+  
 }
