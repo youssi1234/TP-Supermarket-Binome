@@ -1,10 +1,9 @@
--- 1. Création de la base de données
+
 
 CREATE DATABASE IF NOT EXISTS supermarche;
 USE supermarche;
 
 
--- 2. Table PRODUIT
 
 CREATE TABLE IF NOT EXISTS produit (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -15,7 +14,6 @@ CREATE TABLE IF NOT EXISTS produit (
 );
 
 
--- 3. Table CAISSE
 CREATE TABLE IF NOT EXISTS caisse (
     id INT AUTO_INCREMENT PRIMARY KEY,
     numero INT NOT NULL UNIQUE,
@@ -24,7 +22,6 @@ CREATE TABLE IF NOT EXISTS caisse (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- 4. Table ACHAT
 
 CREATE TABLE IF NOT EXISTS achat (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -38,7 +35,6 @@ CREATE TABLE IF NOT EXISTS achat (
 );
 
 
--- 5. Insertion des 5 produits
 
 INSERT INTO produit (designation, prix, quantite_stock) VALUES
 ('Biscuit', 1000, 150),
@@ -48,17 +44,13 @@ INSERT INTO produit (designation, prix, quantite_stock) VALUES
 ('Café', 1500, 50);
 
 
--- 6. Insertion des 2 caisses
 
 INSERT INTO caisse (numero, nom_caissier, statut) VALUES
 (1, 'Jean Dupont', 'ouverte'),
 (2, 'Marie Martin', 'ouverte');
 
 
--- 7. Vérification (optionnel)
 
--- Afficher les produits
 SELECT * FROM produit;
 
--- Afficher les caisses
 SELECT * FROM caisse;
